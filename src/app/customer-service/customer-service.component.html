@@ -1,0 +1,22 @@
+<p>customer-service works!</p>
+<div class="panel panel-primary">
+  <div class="panel-heading">Détail Customers</div>
+  <div class="panel-body">
+    <div *ngIf="customers">
+    <div *ngFor="let c of customers._embedded.customers">
+    <div class="form-group">
+      <label>ID:</label>
+      <label>{{c.id}}</label>
+    </div>
+    <div class="form-group">
+      <label>Nom:</label>
+      <label>{{c.name}}</label>
+    </div>
+    <div class="form-group">
+      <label>Email:</label>
+      <label>{{c.email}}</label>
+    </div>
+  </div>
+    </div>
+</div>
+</div>
